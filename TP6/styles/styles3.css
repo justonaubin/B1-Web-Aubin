@@ -1,0 +1,31 @@
+.calendrier {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.calendrier th, .calendrier td {
+    border: 1px solid black;
+    padding: 15px;
+    width: 14%;
+}
+
+.calendrier th {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+.calendrier td {
+    height: 50px;
+}
+
+.calendrier tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+caption {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
