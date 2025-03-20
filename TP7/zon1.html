@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .top-bar {
+            background-color: red;
+            height: 10%;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .left-bar {
+            background-color: blue;
+            width: 30%;
+        }
+        .main-content {
+            background-color: green;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="window.location.href = 'exo2.html';">Sommaire exercice 2</button>
+    <header class="top-bar">Zone du Haut</header>
+    <div class="container">
+        <aside class="left-bar">Zone de Gauche</aside>
+        <main class="main-content">Zone du Milieu</main>
+    </div>
+</body>
+</html>

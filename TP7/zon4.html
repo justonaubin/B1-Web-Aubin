@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        header, footer {
+            background: teal;
+            text-align: center;
+            padding: 10px;
+            color: black;
+        }
+
+        nav {
+            background: purple;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .full-zone {
+            width: 80%;
+            height: 80%;
+            background: gold;
+            border: 15px solid white; /* Ajout de l'encadré blanc */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="window.location.href = 'exo2.html';">Sommaire exercice 2</button>
+    <header>Haut</header>
+    <nav>Menu</nav>
+    <main>
+        <div class="full-zone">Milieu</div>
+    </main>
+    <footer>Bas</footer>
+</body>
+</html>

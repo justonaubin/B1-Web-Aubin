@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .haut {
+            background-color: red;
+            height: 100px;
+        }
+        .corps {
+            display: flex;
+            flex-grow: 1;
+        }
+        .gauche {
+            background-color: blue;
+            width: 200px;
+        }
+        .milieu {
+            display: flex;
+            flex-grow: 1;
+        }
+        .milieu div {
+            flex: 1;
+            border: 1px solid black;
+        }
+        .z1 { background-color: lightgreen; }
+        .z2 { background-color: lightgreen; }
+        .z3 { background-color: lightgreen; }
+        .z4 { background-color: lightgreen; }
+        .z5 { background-color: lightgreen; }
+        .droite {
+            background-color: blue;
+            width: 200px;
+        }
+        .bas {
+            background-color: yellow;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="window.location.href = 'exo2.html';">Sommaire exercice 2</button>
+    <div class="haut">Zone de Haut</div>
+    <div class="corps">
+        <div class="gauche">Zone de Gauche</div>
+        <div class="milieu">
+            <div class="z1">Z1</div>
+            <div class="z2">Z2</div>
+            <div class="z3">Z3</div>
+            <div class="z4">Z4</div>
+            <div class="z5">Z5</div>
+        </div>
+        <div class="droite">Zone de Droite</div>
+    </div>
+    <div class="bas">Zone de Bas</div>
+</body>
+</html>

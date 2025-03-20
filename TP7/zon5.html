@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        header, footer {
+            background: teal;
+            text-align: center;
+            padding: 10px;
+            color: black;
+        }
+
+        nav {
+            background: purple;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0; /* Supprime les marges */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 100%; /* Prend toute la largeur */
+            height: 100%; /* Prend toute la hauteur */
+            background: white;
+        }
+
+        .zone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border: 2px solid white; /* Séparation visible */
+        }
+
+        .A { background: teal; }
+        .B { background: orange; }
+        .C { background: lightgray; }
+        .D { background: blue; }
+    </style>
+</head>
+<body>
+    <button onclick="window.location.href = 'exo2.html';">Sommaire exercice 2</button>
+    <header>Haut</header>
+    <nav>Menu</nav>
+    <main>
+        <div class="grid-container">
+            <div class="zone A">A</div>
+            <div class="zone B">B</div>
+            <div class="zone C">C</div>
+            <div class="zone D">D</div>
+        </div>
+    </main>
+    <footer>Bas</footer>
+</body>
+</html>
