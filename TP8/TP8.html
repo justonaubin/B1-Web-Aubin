@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Livraijuston</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="window.location.href = '../Accueil.html';">Accueil</button>
+        <div id="formSection">
+            <form id="devisForm">
+                <fieldset>
+                    <legend>Informations client</legend>
+                    <label>Nom : <input type="text" id="nomClient" required></label><br><br>
+                    <label>Téléphone : <input type="text" id="telClient" required></label><br><br>
+                    <label>Adresse : <input type="text" id="adresseClient" required></label><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Détails du projet</legend>
+                    <label>Surface de la dalle (m²) : <input type="number" id="surface" required></label><br><br>
+                    <label>Épaisseur de la dalle (cm) : <input type="number" id="epaisseur" min="15" max="35" required></label><br><br>
+                </fieldset>
+                <button type="button" onclick="calculerDevis()">Obtenir le devis</button>
+            </form>
+        </div>
+
+        <div id="resultat" class="devis hidden">
+            <div class="container">
+                <h1>DEVIS N°<span id="numDevis"></span></h1>
+                <p><strong>Date du devis :</strong> <span id="dateDevis"></span><br>
+                <strong>Validité du devis :</strong> 1 mois</p>
+        
+                <div>
+                    <p><strong>AUBIN LIVRAIJUSTON</strong><br>
+                    789562147<br>
+                    aubin@livraijuston.com<br>
+                    livraijuston.com.com<br>
+                    2 rue loin, Loinville</p>
+                </div>
+        
+                <div class="right">
+                    <p><strong>À L'ATTENTION DE</strong><br>
+                    <span id="clientNom"></span><br>
+                    <span id="clientTel"></span><br>
+                    <span id="clientAdresse"></span></p>
+                </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>DESCRIPTION</th>
+                        <th>PRIX</th>
+                        <th>QUANTITÉ</th>
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Béton (m³)</td>
+                        <td>91 €</td>
+                        <td id="quantiteVolume"></td>
+                        <td id="totalVolume"></td>
+                    </tr>
+                    <tr>
+                        <td>Livraison (par camion de 9 m³)</td>
+                        <td>140 €</td>
+                        <td id="nbCamions"></td>
+                        <td id="totalLivraison"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="right">Sous total :</td>
+                        <td id="sousTotal"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="right">TVA (20%) :</td>
+                        <td id="tva"></td>
+                    </tr>
+                    <tr class="bold">
+                        <td colspan="3" class="right">TOTAL :</td>
+                        <td id="total"></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <p><strong>Conditions :</strong><br>
+            30% d'acompte à verser à la signature du contrat. Le reste à la remise des fichiers finaux.</p>
+
+            <p class="right"><strong>Signature du client</strong></p>
+
+            <button id="printButton" onclick="window.print()">Imprimer le devis</button>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
