@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  form label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button {
+    padding: 10px;
+    background: #007acc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #005fa3;
+  }
+  
+  .calendrier {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .calendrier th, .calendrier td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  .calendrier-petit td, .calendrier-petit th {
+    padding: 5px;
+    font-size: 12px;
+  }
+  
+  .calendrier-moyen td, .calendrier-moyen th {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .calendrier-grand td, .calendrier-grand th {
+    padding: 15px;
+    font-size: 16px;
+  }
+  

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 2 - Formulaire</title>
+  <link rel="stylesheet" href="styles/ex2.css">
+</head>
+<body>
+    <button onclick="window.location.href = 'TP9.html';">Sommaire</button>
+  <h2>Formulaire Visite</h2>
+  <form id="visitForm">
+    Nom : <input type="text" id="nom" required><br>
+    Prénom : <input type="text" id="prenom" required><br>
+    Études suivies :
+    <select id="etudes">
+      <option value="Bac Pro">Bac Pro</option>
+      <option value="STI">STI</option>
+      <option value="STMG">STMG</option>
+      <option value="Général">Général</option>
+    </select><br><br>
+    <button type="submit">Valider</button>
+  </form>
+
+  <h3>Liste des Visiteurs</h3>
+  <table border="1" id="visiteurs">
+    <tr><th>Nom</th><th>Prénom</th><th>Études</th></tr>
+  </table>
+
+  <script src="scripts/ex2.js"></script>
+</body>
+</html>

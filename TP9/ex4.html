@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 4 - Calendrier paramétrable</title>
+  <link rel="stylesheet" href="styles/ex4.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Générateur de Calendrier</h2>
+
+    <form id="calendar-form">
+      <label>Mois :
+        <select id="mois">
+          <option value="1">Janvier</option>
+          <option value="2">Février</option>
+          <option value="3">Mars</option>
+          <option value="4">Avril</option>
+          <option value="5">Mai</option>
+          <option value="6">Juin</option>
+          <option value="7">Juillet</option>
+          <option value="8">Août</option>
+          <option value="9">Septembre</option>
+          <option value="10">Octobre</option>
+          <option value="11">Novembre</option>
+          <option value="12">Décembre</option>
+        </select>
+      </label>
+
+      <label>Année :
+        <input type="number" id="annee" value="2025" min="1900" max="2100" />
+      </label>
+
+      <label>Premier jour du mois :
+        <select id="jour">
+          <option value="1">Lundi</option>
+          <option value="2">Mardi</option>
+          <option value="3">Mercredi</option>
+          <option value="4">Jeudi</option>
+          <option value="5">Vendredi</option>
+          <option value="6">Samedi</option>
+          <option value="7">Dimanche</option>
+        </select>
+      </label>
+
+      <label>Taille :
+        <select id="taille">
+          <option value="petit">Petit</option>
+          <option value="moyen" selected>Moyen</option>
+          <option value="grand">Grand</option>
+        </select>
+      </label>
+
+      <label>Couleur de fond :
+        <input type="color" id="fond" value="#ffffff" />
+      </label>
+
+      <label>Couleur du texte :
+        <input type="color" id="texte" value="#000000" />
+      </label>
+
+      <button type="submit">Générer le calendrier</button>
+    </form>
+
+    <div id="calendrier-container"></div>
+  </div>
+
+  <script src="scripts/ex4.js"></script>
+</body>
+</html>
