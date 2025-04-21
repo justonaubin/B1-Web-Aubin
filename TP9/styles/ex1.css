@@ -1,0 +1,22 @@
+.tooltip {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #333;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 100;
+  width: 220px;
+}
+.definition {
+  color: darkblue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.tooltip h4 {
+  margin: 0 0 5px;
+}
+.tooltip p {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
